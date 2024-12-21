@@ -9,7 +9,7 @@ function Users() {
 
     useLayoutEffect(() => {
         const fetchData = async () => {
-            await fetch('http://localhost:3000/api/users')
+            await fetch('https://learn-next-js-project-1-xxye.vercel.app/api/users')
                 .then((res) => res.json())
                 .then((data) => setUserList(data));
             }
