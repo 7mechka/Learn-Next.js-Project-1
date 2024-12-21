@@ -1,6 +1,10 @@
 import style from './Posts.module.scss'
 
-function Posts({ params }: {params: {id: number}}) {
+interface Props {
+    params: { id: string };
+}
+
+function Posts({ params }: Props) {
     return ( 
         <div className={style.root}>
             <p>Посты пользователя с ID: {params.id}</p>
