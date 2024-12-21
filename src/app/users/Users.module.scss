@@ -1,0 +1,30 @@
+.root {
+  color: #fff;
+}
+.userBlock {
+  & > p:nth-child(1) {
+    font-size: 22px;
+    font-weight: 600;
+  }
+}
+.userList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 18px;
+  & > li {
+    padding: 5px 0 15px 5px;
+    border-bottom: 1px solid rgba($color: #faebd7, $alpha: 0.6);
+    background-color: rgba($color: #faebd7, $alpha: 0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    & > p {
+      border-bottom: 1px dashed rgba($color: #faebd7, $alpha: 0.5);
+    }
+    & > *:last-child {
+        margin-top: 10px;
+    }
+  }
+}

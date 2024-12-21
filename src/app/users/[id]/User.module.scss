@@ -1,0 +1,15 @@
+.root {
+    color: #FFF;
+}
+.userInfo {
+    background-color: rgba($color: #faebd7, $alpha: 0.4);
+    color: #FFF;
+    font-size: 18px;
+    padding: 5px 0 15px 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    & > p {
+        border-bottom: 1px dashed rgba($color: #faebd7, $alpha: 0.5);
+    }
+}
