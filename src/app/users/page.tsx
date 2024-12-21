@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useLayoutEffect, useState } from 'react'
+import { useLayoutEffect, useState } from 'react'
 import style from './Users.module.scss'
 import { User } from '../interface/interface'
 import Btn from '@/components/UI/Btn'
@@ -18,10 +18,6 @@ function Users() {
     }, [])
 
     console.log(userList)
-
-
-
-
 
     return ( 
     <div className={style.root}>

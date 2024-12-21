@@ -1,5 +1,4 @@
 import style from './User.module.scss'
-import Btn from '@/components/UI/Btn'
 import { User } from '@/app/interface/interface';
 
 
