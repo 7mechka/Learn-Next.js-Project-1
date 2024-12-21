@@ -13,12 +13,13 @@ async function getUser(id: string): Promise<User | null> {
 }
 
 interface Props {
-    params: { id: string };
+    id: string;
 }
 
-async function UserPage({ params }: Props) {
+async function UserPage({ params }: { params: Promise<Props> }) {
 
-    const user = await getUser((await params).id);
+    const { id } = await params;
+    const user = await getUser(id);
 
     return ( 
         <div className={style.root}>

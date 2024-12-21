@@ -17,8 +17,6 @@ function Users() {
         fetchData()
     }, [])
 
-    console.log(userList)
-
     return ( 
     <div className={style.root}>
         <h2>
