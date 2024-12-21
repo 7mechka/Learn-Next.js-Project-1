@@ -5,9 +5,11 @@ interface Props {
 }
 
 async function Posts({ params }: Props) {
+    const { id } = await params;
+
     return ( 
         <div className={style.root}>
-            <p>Посты пользователя с ID: {(await params).id}</p>
+            <p>Посты пользователя с ID: {id}</p>
         </div>
      );
 }
