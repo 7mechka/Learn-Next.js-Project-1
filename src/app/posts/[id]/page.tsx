@@ -1,10 +1,10 @@
 import style from './Posts.module.scss'
 
 interface Props {
-    params: { id: string };
+    id: string ;
 }
 
-async function Posts({ params }: Props) {
+async function Posts({ params }: { params: Promise<Props> }) {
     const { id } = await params;
 
     return ( 
